@@ -1,4 +1,4 @@
-package br.com.robson.api_spring_mongodb.domain;
+package br.com.robson.api_spring_mongodb.domain.entities;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

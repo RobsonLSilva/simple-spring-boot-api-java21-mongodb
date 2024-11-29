@@ -1,6 +1,6 @@
 package br.com.robson.api_spring_mongodb.services;
 
-import br.com.robson.api_spring_mongodb.domain.User;
+import br.com.robson.api_spring_mongodb.domain.entities.User;
 import br.com.robson.api_spring_mongodb.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
