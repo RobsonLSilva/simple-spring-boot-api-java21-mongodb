@@ -1,6 +1,5 @@
 package br.com.robson.api_spring_mongodb.config;
 
-import br.com.robson.api_spring_mongodb.domain.dtoRequests.UserDto;
 import br.com.robson.api_spring_mongodb.domain.entities.User;
 import br.com.robson.api_spring_mongodb.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
-import java.util.List;
 
 @Configuration
 public class TestConfig implements CommandLineRunner{
