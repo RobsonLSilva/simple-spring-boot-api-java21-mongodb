@@ -1,5 +1,6 @@
 package br.com.robson.api_spring_mongodb.services;
 
+import br.com.robson.api_spring_mongodb.domain.dtoRequests.UserDto;
 import br.com.robson.api_spring_mongodb.domain.entities.User;
 import br.com.robson.api_spring_mongodb.repository.UserRepository;
 import br.com.robson.api_spring_mongodb.services.exceptions.ObjectNotFoundException;
@@ -22,4 +23,13 @@ public class UserService {
         return userRepository.findById(id)
                 .orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
     }
+
+    public User insert(User user){
+        return userRepository.insert(user);
+    }
+
+    public User fromDTO(UserDto userDto){
+        return new User(userDto.getId(), userDto.getName(), userDto.getEmail());
+    }
+
 }
